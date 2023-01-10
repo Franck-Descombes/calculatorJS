@@ -1,5 +1,3 @@
-function sum(a, b) {
-    return a + b
-}
+const sum = require('./sum');
 
 console.log(sum(1, 2))
