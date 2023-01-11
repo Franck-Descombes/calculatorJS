@@ -1,8 +1,7 @@
 module.exports = function sum(a, b) {
-    const res = a - b;
-    if (Number.NaN(res)) {
-        throw new Error('Invalid operation');
+    if (b > a) {
+        throw new Error('negative result not allowed')
     }
 
-    return res
+    return a - b
 }
