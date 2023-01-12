@@ -1,7 +1,6 @@
 module.exports = function sum(a, b) {
-    if (b > a) {
-        throw new Error('negative result not allowed')
+    if (a < b) {
+        return 0
     }
-
     return a - b
 }
